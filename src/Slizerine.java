@@ -21,15 +21,16 @@ public class Slizerine extends Hogwarts {
         int sumThis = this.trick + this.determination + this.ambition;
         int sumGriffindorStudent = slizerineStudent.getTrick() + slizerineStudent.getDetermination() + slizerineStudent. getAmbition();
         if (sumThis > sumGriffindorStudent) {
-            System.out.println("Драко лучший Слизериновец");
+            System.out.println(this.getName() + " лучший Слизериновец");
         } else {
-            System.out.println("Грехэм лучший Гриффиндорец");
+            System.out.println(slizerineStudent.getName() + " лучший Гриффиндорец");
         }
     }
     @Override
     public String toString() {
-        return "Slizerine (" + this.getName() + " " + this.getSurName()
-                + ": witchcraft=" + this.getWitchcraft() + ", transgression=" + this.getTransgression()
-                + ", trick=" + trick + ", determination=" + determination + ", ambition=" + ambition + ")";
+        return "Slizerine (" + super.toString()
+                + ", trick=" + trick
+                + ", determination=" + determination
+                + ", ambition=" + ambition + ")";
     }
 }

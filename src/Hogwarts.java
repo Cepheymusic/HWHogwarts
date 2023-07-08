@@ -31,4 +31,11 @@ public abstract class Hogwarts {
             System.out.println("Драко лучше Гарри");
         }
     }
+    @Override
+    public String toString() {
+        return this.getName() + " " + this.getSurName()
+                + ": witchcraft=" + this.getWitchcraft()
+                + ", transgression=" + this.getTransgression()
+                + ",";
+    }
 }

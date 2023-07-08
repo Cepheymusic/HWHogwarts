@@ -21,15 +21,15 @@ public class Puffenduy extends Hogwarts {
         int sumThis = this.industriousness + this.loyalty + this.honesty;
         int sumGriffindorStudent = puffenduiStudent.getIndustriousness() + puffenduiStudent.getLoyalty() + puffenduiStudent. getHonesty();
         if (sumThis > sumGriffindorStudent) {
-            System.out.println("Захария лучший Пуффендуец");
+            System.out.println(this.getName() + " лучший Пуффендуец");
         } else {
-            System.out.println("Седриг лучший Пуффендуец");
+            System.out.println(puffenduiStudent.getName() + " лучший Пуффендуец");
         }
     }
     @Override
     public String toString() {
-        return "Puffenduy (" + this.getName() + " " + this.getSurName()
-                + ": witchcraft=" + this.getWitchcraft() + ", transgression=" + this.getTransgression()
-                + ", industriousness=" + industriousness + ", loyalty=" + loyalty + ", honesty=" + honesty + ")";
+        return "Puffenduy (" + super.toString()
+                + ", industriousness=" + industriousness + ", loyalty="
+                + loyalty + ", honesty=" + honesty + ")";
     }
 }

@@ -21,15 +21,15 @@ public class Cogtevran extends Hogwarts {
         int sumThis = this.wisdom + this.wit + this.creativity;
         int sumGriffindorStudent = cogtevranStudent.getWisdom() + cogtevranStudent.getWit() + cogtevranStudent. getCreativity();
         if (sumThis > sumGriffindorStudent) {
-            System.out.println("Чжоу лучший Пуффендуец");
+            System.out.println(this.getName() + " лучший Пуффендуец");
         } else {
-            System.out.println("Падма лучший Пуффендуец");
+            System.out.println(cogtevranStudent.getName() + " лучший Пуффендуец");
         }
     }
     @Override
     public String toString() {
-        return "Cogtevran (" + this.getName() + " " + this.getSurName()
-                + ": witchcraft=" + this.getWitchcraft() + ", transgression=" + this.getTransgression()
-                + ", wisdom=" + wisdom + ", wit=" + wit + ", creativity=" + creativity + ")";
+        return "Cogtevran (" + super.toString()
+                + ", wisdom=" + wisdom + ", wit="
+                + wit + ", creativity=" + creativity + ")";
     }
 }

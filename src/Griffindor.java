@@ -22,15 +22,14 @@ public class Griffindor extends  Hogwarts {
         int sumThis = this.nobility + this.honor + this.bravery;
         int sumGriffindorStudent = griffindorStudent.getNobility() + griffindorStudent.getHonor() + griffindorStudent. getBravery();
         if (sumThis > sumGriffindorStudent) {
-            System.out.println("Гарри лучший Гриффиндорец");
+            System.out.println(this.getName() + " лучший Гриффиндорец");
         } else {
-            System.out.println("Гермиона лучший Гриффиндорец");
+            System.out.println(griffindorStudent.getName() + " лучший Гриффиндорец");
         }
     }
     @Override
     public String toString() {
-        return "Griffindor (" + this.getName() + " " + this.getSurName()
-                + ": witchcraft=" + this.getWitchcraft() + ", transgression=" + this.getTransgression()
+        return "Griffindor (" + super.toString()
                 + ", nobility=" + nobility + ", honor=" + honor + ", bravery=" + bravery + ")";
     }
 }
